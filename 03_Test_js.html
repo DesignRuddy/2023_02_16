@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 03_Test_js.html </title>
+    
+    <style>
+
+    </style>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function mypass(){
+        let kor=0, eng=0, tot=0, avg=0 ;
+        //let 표준값들_숫자는 0부터 문자는 ''에 들어가라 ?인거같아요.
+
+        kor = 70;  
+        eng = 85;
+        tot = kor + eng;
+        avg = tot/2;
+        //변수를 지정해주었어요.
+    }//end
+    function mytest(){
+        let su = 0, nmg = 0, result=''; 
+        
+        su = 6 ;
+        nmg = su%2 ;
+        if(nmg==0){ result = su + ' 짝수입니다';}
+        else{ result = su +' 홀수입니다';}
+        
+        document.getElementById('showup').innerHTML=result;
+    }//end
+    function mynumber(){
+        var num=0, message='' ;
+        num = 0 ; //음수 제로 양수
+
+        if(num>0){message = '양수입니다.';}
+        else if(0==num){message = '제로입니다';}
+        else if(num<0){message = '음수입니다';}
+        else{message = num + '숫자 아닙니다';}
+
+        document.getElementById('showup').innerHTML=message ;
+        
+    }//end
+
+</script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h2> 03_Test_js.html </h2>
+
+    <div id="showup">
+        <img src="./img/Black_Desert.jpg" alt="" width="300" height="180">
+    </div>
+
+    <button onclick="mypass()">점수확인 </button>
+    <button onclick="mytest()">홀짝구별 </button>
+    <button onclick="mynumber()">정수 </button>
+  
+</body>
+</html>

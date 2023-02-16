@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_Test_koreng.html</title>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function myhap(){
+        let info='';
+        let kor=0, eng=0, hap=0, avg=0;
+        let result = '';
+
+        kor = 70;
+        eng = 70;
+        hap = kor + eng;
+        avg = hap/2;
+        
+        if (avg >= 98){result = '축합격'; }
+        else { result = '재시험'}
+
+        info = '총점='+ hap + '평균='+ avg;
+        info = info + '결과=' + result;
+
+        document.getElementById('display') .innerHTML = info;
+    }
+    </script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <div id="display"></div>
+</body>
+<!-- 주석 '끝' 입니다.    ------  -->
+<style>
+    /*css주석 기입  */
+</style>
+</html>

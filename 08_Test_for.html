@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_Test_for.html</title>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function mytest(){
+        var result='';
+        var su=0 ;
+        
+        for(count=1; count<11; count=count+1){
+            su = su+3 ;
+            if(su==15){break; }
+            result = result+su+' ';
+            document.getElementById('display').innerHTML=result;
+        }
+        
+    }
+    </script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    
+    <h2>08_Test_for.html </h2>
+    <div id="display"></div>
+    <button onclick="mytest()">출력</button>
+
+</body>
+<!-- 주석 '끝' 입니다. ------  -->
+<style>
+    /*css주석 기입  */
+    *{
+        font-size: 20pt;
+    }
+</style>
+</html>

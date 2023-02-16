@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09_Test_for.html</title>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function mytest(){ //1 2 3 4 5 출력
+        var su=0 ;
+        var result=0;
+        var sum=0;
+
+        for(cnt=1; cnt<6; cnt=cnt+1){
+
+            result=result+cnt;
+            sum1=sum+1;
+            sum2=sum+2;
+            sum3=sum+3;
+            sum4=sum+4;
+            sum5=sum+5;
+            sum_all=sum1,sum2,sum3,sum4,sum5;
+            document.write()
+        }
+        document.getElementById('display').innerHTML=result;
+        }
+    </script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    
+    <h2>09_Test_for.html </h2>
+    <div id="display"></div>
+    <button onclick="mytest()">출력</button>
+
+</body>
+<!-- 주석 '끝' 입니다. ------  -->
+<style>
+    /*css주석 기입  */
+    *{
+        font-size: 20pt;
+    }
+</style>
+</html>
